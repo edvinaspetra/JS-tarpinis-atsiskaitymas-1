@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+    <!-- Style css  -->
+    <link rel="stylesheet" href="app/css/style.css">
+    <title>Tarpinis atsiskaitymas JS</title>
+    <!-- Script JS -->
+    <script src="script.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+      <!-- Swiper JS css -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<body>
+  <main>
+
+    <!-- Navigacija TOP -->
+    <nav id="top-menu">
+      <div class="container">
+        <div>
+          <img src="app/content/logo-small.png" alt="logo-small">
+        </div>
+        <div class="nav-links">
+          <a href="#section-4">Features</a>
+          <a href="#section-5">About</a>
+          <a href="#section-66">Pricing</a>
+          <a href="#section-7">Reviews</a>
+          <a href="#section-8">Contact</a>
+        
+          <i id="burger" class="fas fa-bars"></i>
+        </div>
+      </div>
+      
+    </nav>
+
+    <!-- Navigacija SIDE -->
+    <nav id="side-menu" class="container">
+        <a href="#section-4">Features</a>
+        <a href="#section-5">About</a>
+        <a href="#section-66">Pricing</a>
+        <a href="#section-7">Reviews</a>
+        <a href="#section-8">Contact</a>
+    </nav>
+
+
+    <!-- Section 1 -->
+    <section id="section-1">
+      <div class="container">
+        <div class="intro">
+          <img src="app/content/logo-big.png" alt="logo-big">
+          <h1>Explain propriety of out perpetual to you</h1>
+          <hr>
+          <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor.
+          Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated
+          astonished is.</p>
+          <button>DOWNLOAD</button>
+        </div>
+        
+        <div class="form">
+          <form action="#">
+            <h3>Try Your <span>FREE</span> Trial Today</h3>
+            <h4>Your details</h4>
+            <input type="text" name="name" id="name" placeholder="First name" required>
+            <br>
+            <input type="text" name="lastName" id="name" placeholder="Last name" required>
+            <br>
+            <input type="number" name="number" id="name" placeholder="Phone number" required>
+            <h4>Type of subscription</h4>
+            <div class="select">
+              <input type="radio" name="sub" required>
+              <label for="">MONTHLY</label>
+              <input type="radio" name="sub">
+              <label for="">YEARLY</label>
+            </div>
+            <button>GET STARTED</button>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <!-- Section 2 -->
+    <section id="section-2">
+      <div class="container">
+        <div class="text">
+          <h3>Social Media</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fas fa-rss"></i>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <!-- Section 3 -->
+    <section id="section-3">
+      <div class="container">
+        <div class="allButtons">
+          <button style="display: none;" onclick="changeContent(0, 'pirmas')">pirmas</button>
+          <button onclick="changeContent(1, 'antras')"><span>REGISTER</span></button>
+          <button onclick="changeContent(2, 'trecias')"><span>APPLY</span></button>
+          <button onclick="changeContent(3, 'ketvirtas')"><span>RECEIVE</span></button>
+        </div>
+        
+
+        <section class="sec" id="pirmas">
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+          parturient montes. 
+          <br>
+          <br>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        </section>
+
+        <section class="sec" id="antras">
+          <h1>Register button</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          </p>
+        </section>
+
+        <section class="sec" id="trecias">
+          <h1>Apply button</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          </p>
+        </section>
+
+        <section class="sec" id="ketvirtas">
+          <h1>Receive button</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          </p>
+        </section>
+
+        <div class="pics">
+          <div class="top-pics">
+            <button class="pic pic-1"><div id="overlay">EXPLORE</div></button>
+            <button class="pic pic-2"><div id="overlay">EXPLORE</div></button>
+          </div>
+          <button class="pic pic-3"><div id="overlay">EXPLORE</div></button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section-4">
+      <div class="container">
+        <img src="app/content/logo-big.png" alt="logo-big">
+        <div class="content-4">
+          <h2>Erat tempor tempus erat malesuada</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo.</p>
+          <div class="title-4">
+            <i class="far fa-eye"></i>
+            <div>
+              <p>
+                <span>
+                  <h4>Title</h4>
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+              </p>
+              </div>
+            </div>
+            
+          <div class="title-4">
+            <i class="far fa-comment"></i>
+            <div>
+              <p>
+                <span>
+                  <h4>Title</h4>
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                amet
+                lacus accumsan et viverra justo commodo.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section-5">
+      <div class="container">
+        <h1>WHY THIS IS AWESOME</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="content-5">
+          <div class="logos-5">
+            <i class="fas fa-award"></i>
+            <h3>Thoughtful Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
+          </div>
+
+          <div class="logos-5">
+            <i class="fas fa-spa"></i>
+            <h3>Well Crafted</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
+          </div>
+
+          <div class="logos-5">
+            <i class="fab fa-cc-visa"></i>
+            <h3>Easy to Customize</h3>
+            <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <!-- Section 6 -->
+    <section id="section-66">
+            <div class="container">
+            
+              <h1>PRICING OPTIONS</h1>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <!-- Slider main container -->
+              <div class="swiper container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slide-1">
+                    <div class="basic">
+                      <h3>Basic</h3>
+                      <h1><span>$</span>0</h1>
+                      <p>Free for Life</p>
+                      <h5>1 GB OF SPACE</h5>
+                      <h5>10 GB OF BANDWIDTH</h5>
+                      <h5>3 WEBSITES</h5>
+                      <h5>BASIC CUSTOMIZATION</h5>
+                      <h5>WORDPRESS INTEGRATION</h5>
+                      <h5>EMAIL SUPPORT</h5>
+                    </div>
+                    
+                  </div>
+            
+                  <div class="swiper-slide slide-2">
+                    <div class="professional">
+                      <h3>Professional</h3>
+                      <h1><span>$</span>19</h1>
+                      <p>Monthly Payment</p>
+                      <h5>OUR MOST POPULAR</h5>
+                      <h5>5 GB OF SPACE</h5>
+                      <h5>50 GB OF BANDWIDTH</h5>
+                      <h5>12 WEBSITES</h5>
+                      <h5>ADVANCED CUSTOMIZATION</h5>
+                      <h5>WORDPRESS INTEGRATION</h5>
+                      <h5>EMAIL SUPPORT</h5>
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide slide-3">
+                    <div class="enterprise">
+                      <h3>Enterprise</h3>
+                      <h1><span>$</span>70</h1>
+                      <p>Monthly Payment</p>
+                      <h5>UNLIMITED SPACE</h5>
+                      <h5>UNLIMITED BANDWIDTH</h5>
+                      <h5>100 WEBSITES</h5>
+                      <h5>ADVANCED CUSTOMIZATION</h5>
+                      <h5>WORDPRESS INTEGRATION</h5>
+                      <h5>24/7 CUSTOMER SUPPORT</h5>
+                    </div>
+                  </div>
+     
+            
+                </div>
+            
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+              </div>
+            
+            </div>
+    </section>
+
+
+    <!-- Section 7 -->
+    <section id=section-7>
+      <div class="container">
+
+        <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide-1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+              aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Jeremy H.</h4>
+                  <h6>Manager</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+            <div class="avatar">
+              <img src="app/content/avatar.png" alt="">
+              <div>
+                <h4>John S.</h4>
+                <h6>Freelancer</h6>
+              </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+                aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Susan W.</h4>
+                  <h6>Photographer</h6>
+                </div>
+                
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+              aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Jeremy H.</h4>
+                  <h6>Manager</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+            <div class="avatar">
+              <img src="app/content/avatar.png" alt="">
+              <div>
+                <h4>John S.</h4>
+                <h6>Freelancer</h6>
+              </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+                aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Susan W.</h4>
+                  <h6>Photographer</h6>
+                </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+              aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Jeremy H.</h4>
+                  <h6>Manager</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+            <div class="avatar">
+              <img src="app/content/avatar.png" alt="">
+              <div>
+                <h4>John S.</h4>
+                <h6>Freelancer</h6>
+              </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-9">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+                aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Susan W.</h4>
+                  <h6>Photographer</h6>
+                </div>
+                
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-10">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+              aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Jeremy H.</h4>
+                  <h6>Manager</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-11">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+            <div class="avatar">
+              <img src="app/content/avatar.png" alt="">
+              <div>
+                <h4>John S.</h4>
+                <h6>Freelancer</h6>
+              </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide slide-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio
+                aspernatur ex.</p>
+              <div class="avatar">
+                <img src="app/content/avatar.png" alt="">
+                <div>
+                  <h4>Susan W.</h4>
+                  <h6>Photographer</h6>
+                </div>
+                
+            </div>
+            </div>
+
+
+
+
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        </div>
+
+      </div>
+      
+    </section>
+
+
+    <!-- Section 8 -->
+    <section id="section-8">
+      <div class="container">
+         <h1>CONTACT US</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <form action="#">
+            <input type="text" name="name" id="name" placeholder="First name" required>
+            <br>
+            <input type="text" name="lastName" id="name" placeholder="Last name" required>
+            <br>
+            <input type="number" name="number" id="name" placeholder="Phone number" required>
+            <div class="select">
+              <input type="radio" name="sub" required>
+              <label for="">PERSONAL</label>
+              <input type="radio" name="sub">
+              <label for="">COMPANY</label>
+            </div>
+            <button>SEND</button>
+          </form>
+      </div>
+ 
+    </section>
+
+
+    <!-- Footer -->
+    <footer >
+      <div class="container">
+      <div class="social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fas fa-rss"></i>
+      </div>
+
+      <p>© 2019 Cheshire County</p>
+      </div>
+    </footer>
+
+  
+  </main>
+
+  <!-- swiper script -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script src="swiper.js"></script>
+</body>
+</html>
